@@ -27,7 +27,7 @@ a {
   position: relative;
   height: 66px;
   background: white;
-  border: solid 4pt #FFDAA3;
+  border: solid 3pt black;
   border-radius: 23px;
 }
 
@@ -78,6 +78,10 @@ h2 {
     background: rgba(138, 102, 60, 0.74);
 }
 
+.icecream{
+    background: rgba(248, 165, 224, 0.74)
+}
+
 .bake-titles{
   font-size: 80pt;
   color: white;
@@ -111,7 +115,7 @@ iframe {
 .home{
   text-align: center;
   background: white;
-  border: solid 4pt #FFDAA3;
+  border: solid 3pt black;
   border-radius: 23px;
   margin-bottom: 50px;
 }
