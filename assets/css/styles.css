@@ -101,9 +101,13 @@ h2 {
   text-align: center;
 }
 
-ol {
+ol, ul {
   font-size: 20pt;
-  list-style-position: inside;
+  list-style-position: outside;
+}
+
+li{
+  text-align: left;
 }
 
 iframe {
