@@ -123,14 +123,14 @@ h2 {
 }
 
 .bake-titles{
-  font-size: 80pt;
+  font-size: 50pt;
   color: white;
   text-align: center;
   padding-top: 100px;
 }
 
 .bake-subtitles{
-  font-size: 30pt;
+  font-size: 20pt;
   color: black;
   text-align: center;
 }
@@ -146,8 +146,13 @@ ol, ul {
   list-style-position: outside;
 }
 
-li{
+li, h3{
   text-align: left;
+  font-size: 11pt;
+}
+
+li{
+  margin-left: 30px;
 }
 
 iframe {
@@ -166,6 +171,22 @@ iframe {
 
 h4{
   text-align: left;
-  font-weight: bolder;
-  font-size: 30pt;
+  font-size: 20pt;
+}
+
+@media screen and (min-width: 700px){
+  .bake-titles{
+      font-size: 80pt;
+  }
+  .bake-subtitles{
+      font-size: 30pt;
+  }
+  h4{
+    font-size: 30pt;
+  }
+  li, h3{
+    font-size: 18pt
+  }
+
+
 }
