@@ -161,6 +161,15 @@ iframe {
   align-items: center;
 }
 
+img{
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
 .home{
   text-align: center;
   background: white;

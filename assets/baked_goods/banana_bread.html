@@ -25,6 +25,7 @@
   </div>
 
   <div class="container">
+    <div id="picture"></div>
     <div class="row">
       <div class="box">
         <div class="recipe">
@@ -73,6 +74,13 @@ const settings = {
 
 
   $.ajax(settings).done(function (response) {
+
+    const doc = document.getElementById('picture')
+    const cont = document.createElement('container')
+    doc.appendChild(cont)
+    const img = document.createElement('img')
+    img.src = response.thumbnail_url
+    cont.appendChild(img)
 
     $.each(response.sections, function(index1, value) {
       const app = document.getElementById('ingredients')

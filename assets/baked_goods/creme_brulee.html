@@ -25,6 +25,7 @@
   </div>
 
   <div class="container">
+    <div id="picture"></div>
     <div class="row">
       <div class="box">
         <div class="recipe">
@@ -50,7 +51,7 @@
     </div>
   </div>
 
-  
+
 <!-- javascript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
@@ -69,6 +70,13 @@ const settings = {
 
 
   $.ajax(settings).done(function (response) {
+
+    const doc = document.getElementById('picture')
+    const cont = document.createElement('container')
+    doc.appendChild(cont)
+    const img = document.createElement('img')
+    img.src = response.thumbnail_url
+    cont.appendChild(img)
 
     $.each(response.sections, function(index1, value) {
       const app = document.getElementById('ingredients')

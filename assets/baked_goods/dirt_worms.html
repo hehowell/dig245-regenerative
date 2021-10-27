@@ -20,11 +20,12 @@
   <div class="container-fluid">
     <div class="row">
       <div class="head dirt_worms bake-titles"> CHILDHOOD DIRT AND WOMRS
-      <div class="bake-subtitles">when you fully embrace the inner child in yourself, this will transport you back to childhood </div></div>
+      <div class="bake-subtitles">when you fully embrace your inner child, this will trasnport you back to playing in the mud at 7 years old</div></div>
     </div>
   </div>
 
   <div class="container">
+    <div id="picture"></div>
     <div class="row">
       <div class="box">
         <div class="recipe">
@@ -67,6 +68,13 @@ const settings = {
 
 
   $.ajax(settings).done(function (response) {
+
+    const doc = document.getElementById('picture')
+    const cont = document.createElement('container')
+    doc.appendChild(cont)
+    const img = document.createElement('img')
+    img.src = response.thumbnail_url
+    cont.appendChild(img)
 
     $.each(response.sections, function(index1, value) {
       const app = document.getElementById('ingredients')
