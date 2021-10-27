@@ -19,8 +19,8 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="head cookies bake-titles"> MOMMA'S HOMEMADE CHOCOLATE CHIP COOKIES
-      <div class="bake-subtitles">for those times when you're feeling extra happy</div></div>
+      <div class="head apple_pie bake-titles"> PORCHSIDE APPLE PIE
+      <div class="bake-subtitles">nothing says "what's mine is yours" quite like fresh, steaming, sweet apple pie</div></div>
     </div>
   </div>
 
@@ -35,9 +35,9 @@
           RECIPE
           <ol id="recipe">
           </ol>
-        </div>
 
-        <div id="video"></div>
+          <div id="video"></div>
+        </div>
 
       </div>
     </div>
@@ -53,6 +53,8 @@
   </div>
 
 
+  <div id="root"> </div>
+
 
 
 
@@ -62,21 +64,19 @@
 <!-- javascript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-
 <script>
 
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://tasty.p.rapidapi.com/recipes/detail?id=951",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "tasty.p.rapidapi.com",
+		"x-rapidapi-key": "d8270b2608msh21b06901ec4c1d9p1fad1djsn0d05782756c9"
+	}
+};
 
-  const settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://tasty.p.rapidapi.com/recipes/detail?id=2088",
-  "method": "GET",
-  "headers": {
-    "x-rapidapi-host": "tasty.p.rapidapi.com",
-    "x-rapidapi-key": "d8270b2608msh21b06901ec4c1d9p1fad1djsn0d05782756c9"
-  }
-  };
 
   $.ajax(settings).done(function (response) {
 
@@ -123,8 +123,19 @@
   });
 
 
-
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

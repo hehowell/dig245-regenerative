@@ -77,40 +77,49 @@ const settings = {
 	}
 };
 
+$.ajax(settings).done(function (response) {
 
-  $.ajax(settings).done(function (response) {
+  $.each(response.sections, function(index1, value) {
+    const app = document.getElementById('ingredients')
+    const container = document.createElement('ol')
+    app.appendChild(container)
+    const h4 = document.createElement('h4')
+    h4.textContent = response.sections[index1].name
+    container.appendChild(h4)
 
-    $.each(response.sections[0].components, function(index, value) {
+    $.each(response.sections[index1].components, function(index, value) {
       const app = document.getElementById('ingredients')
       const container = document.createElement('li')
 
       app.appendChild(container)
       const div = document.createElement('div')
-      div.textContent = response.sections[0].components[index].raw_text
+      div.textContent = response.sections[index1].components[index].raw_text
       container.appendChild(div)
     });
 
-    $.each(response.instructions, function(index, value) {
-      const app = document.getElementById('recipe')
-      const container = document.createElement('li')
-
-      app.appendChild(container)
-      const h3 = document.createElement('h3')
-      h3.textContent = response.instructions[index].display_text
-      container.appendChild(h3)
-    });
-
-    const app = document.getElementById('video')
-    const container = document.createElement('container')
-    app.appendChild(container)
-
-    const iframe = document.createElement('iframe')
-    iframe.src = response.original_video_url
-    iframe.height = '600px'
-    iframe.width = '100%'
-    container.appendChild(iframe)
-
   });
+
+  $.each(response.instructions, function(index, value) {
+    const app = document.getElementById('recipe')
+    const container = document.createElement('li')
+
+    app.appendChild(container)
+    const h3 = document.createElement('h3')
+    h3.textContent = response.instructions[index].display_text
+    container.appendChild(h3)
+  });
+
+  const app = document.getElementById('video')
+  const container = document.createElement('container')
+  app.appendChild(container)
+
+  const iframe = document.createElement('iframe')
+  iframe.src = response.original_video_url
+  iframe.height = '600px'
+  iframe.width = '100%'
+  container.appendChild(iframe)
+
+});
 
 
 </script>

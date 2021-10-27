@@ -24,7 +24,6 @@ a {
 }
 
 .orb {
-  position: relative;
   height: 66px;
   background: white;
   border: solid 3pt black;
@@ -39,23 +38,12 @@ h2 {
   margin-top: 100px;
 }
 
-.second{
-  margin-top: 20px;
-  margin-left: -50px;
-  margin-right: 50px;
-}
-.third{
-  margin-top: 20px;
-}
 .fourth{
-  margin-top: 20px;
-  margin-left: -50px;
-  margin-right: 50px;
   margin-bottom: 100px;
 }
 
-.orb, .col{
-  margin-left: 50px;
+.orb {
+  margin: 5px;
 }
 
 .orb:hover {
@@ -74,12 +62,64 @@ h2 {
   margin-bottom: 100px;
 }
 
-.cookies{
+.cookies, .hot_choc{
     background: rgba(138, 102, 60, 0.74);
 }
 
 .icecream{
-    background: rgba(248, 165, 224, 0.74)
+    background: rgba(248, 165, 224, 0.74);
+}
+
+.coffee_cake{
+    background: rgba(230, 163, 63, 0.74);
+}
+
+.banana_bread{
+    background: rgba(220, 211, 6, 0.6);
+}
+
+.lava_cake{
+    background: rgba(46, 28, 6, 0.74);
+}
+
+.pineapple{
+    background: rgba(230, 174, 37, 0.74);
+}
+
+.apple_pie{
+    background: rgba(255, 8, 0, 0.74);
+}
+
+.dirt_worms{
+    background: rgba(103, 255, 79, 0.74);
+}
+
+.funfetti{
+    background: linear-gradient(90deg, rgba(255, 255, 0, 0.64), rgba(255, 0, 0, 0.64), rgba(255, 127, 0, 0.64), rgba(0, 255, 0, 0.64), rgba( 0, 0, 255, 0.64), rgba(75, 0, 130, 0.64),rgba(255, 255, 0, 0.64));
+}
+
+.eight{
+    background: rgba(63, 190, 229, 0.74);
+}
+
+.caramel{
+    background: rgba(197, 115, 61, 0.74);
+}
+
+.snickerdoodle{
+    background: rgba(210, 105, 19, 0.74);
+}
+
+.strawberry{
+    background: rgba(252, 90, 141, 0.74);
+}
+
+.two_minute{
+    background: rgba(239, 226, 178, 0.74);
+}
+
+.creme{
+    background: rgba(186, 89, 0, 0.74);
 }
 
 .bake-titles{
@@ -122,4 +162,10 @@ iframe {
   border: solid 3pt black;
   border-radius: 23px;
   margin-bottom: 50px;
+}
+
+h4{
+  text-align: left;
+  font-weight: bolder;
+  font-size: 30pt;
 }
