@@ -19,8 +19,8 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="head strawberry bake-titles">NO-BAKE STRAWBERRY CAKE
-      <div class="bake-subtitles">for those times when you just can't even... we're here for you still</div></div>
+      <div class="head hot_choc bake-titles"> CREAMY HOT CHOCOLATE
+      <div class="bake-subtitles">there's snow falling outside, a fire burning in the fireplace, some light jazz playing in the background... let's make this picture perfect! </div></div>
     </div>
   </div>
 
@@ -44,7 +44,6 @@
     </div>
   </div>
 
-
   <div class="container">
     <div class="row text-center">
       <a href="../../index.html" class="col-md orb home"><h2>HOME</h2></a>
@@ -59,11 +58,11 @@
 const settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://tasty.p.rapidapi.com/recipes/detail?id=1511",
+	"url": "https://tasty.p.rapidapi.com/recipes/detail?id=3209",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "tasty.p.rapidapi.com",
-		"x-rapidapi-key": "d8270b2608msh21b06901ec4c1d9p1fad1djsn0d05782756c9"
+		"x-rapidapi-key": "2aab54563emshbaa4099806fb2b0p187440jsn2c3d5be91bc5"
 	}
 };
 
@@ -76,8 +75,6 @@ const settings = {
     const img = document.createElement('img')
     img.src = response.thumbnail_url
     cont.appendChild(img)
-
-
 
     $.each(response.sections, function(index1, value) {
       const app = document.getElementById('ingredients')

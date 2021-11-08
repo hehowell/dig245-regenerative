@@ -28,6 +28,7 @@ a {
   background: white;
   border: solid 3pt black;
   border-radius: 23px;
+  padding: 0px 50px;
 }
 
 h2 {
@@ -41,11 +42,6 @@ h2 {
 .fourth{
   margin-bottom: 100px;
 }
-
-.orb {
-  margin: 5px;
-}
-
 .orb:hover {
   background: #FFBF5F;
   color: black;
@@ -53,6 +49,14 @@ h2 {
 
 .orb:active {
   background: #FF9900;
+}
+
+.orbo:hover {
+  color: #FFBF5F;
+}
+
+.orbo:active {
+  color: #FF9900;
 }
 
 .head{
@@ -138,6 +142,12 @@ h2 {
 .recipe {
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 40pt;
+  text-align: center;
+}
+
+.recipe2 {
+  font-family: 'Zen Maru Gothic', sans-serif;
+
   text-align: center;
 }
 

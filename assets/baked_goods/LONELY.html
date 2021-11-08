@@ -19,8 +19,8 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="head caramel bake-titles"> THE EVIL WITCH'S CARAMEL APPLES
-      <div class="bake-subtitles">sugary, sweet, and oh so enticing... these apples are "to die for" and don't worry I won't say anything if you sneak a little poison in there ;)</div></div>
+      <div class="head two_minute bake-titles">THE TWO-MINUTE COOKIE
+      <div class="bake-subtitles">let's face it... baking is more fun with someone, so let's not waste any time wollowing in our own sadness</div></div>
     </div>
   </div>
 
@@ -44,7 +44,6 @@
     </div>
   </div>
 
-
   <div class="container">
     <div class="row text-center">
       <a href="../../index.html" class="col-md orb home"><h2>HOME</h2></a>
@@ -59,11 +58,11 @@
 const settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://tasty.p.rapidapi.com/recipes/detail?id=5781",
+	"url": "https://tasty.p.rapidapi.com/recipes/detail?id=5420",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "tasty.p.rapidapi.com",
-		"x-rapidapi-key": "d8270b2608msh21b06901ec4c1d9p1fad1djsn0d05782756c9"
+		"x-rapidapi-key": "2aab54563emshbaa4099806fb2b0p187440jsn2c3d5be91bc5"
 	}
 };
 
@@ -74,6 +73,8 @@ const settings = {
     const cont = document.createElement('container')
     doc.appendChild(cont)
     const img = document.createElement('img')
+    console.log(JSON.stringify(response))
+    console.log(response)
     img.src = response.thumbnail_url
     cont.appendChild(img)
 

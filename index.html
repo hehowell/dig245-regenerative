@@ -20,36 +20,16 @@
 <div class="container">
   <div class="row text-center">
     <div class="col">
-      <h1>CHOOSE YOUR EMOTION</h1>
+      <h1>CAN'T DECIDE ON WHAT TO BAKE FOR DESSERT?</h1>
     </div>
-    <div class="box">
+    <div class="">
       <div class="container">
-        <div class="row top">
-            <a href="assets/baked_goods/cookies.html" class="col-md orb"><h2>HAPPY</h2></a>
-            <a href="assets/baked_goods/icecream.html" class="col-md orb"> <h2>SAD</h2> </a>
-            <a href="assets/baked_goods/funfetti.html" class="col-md orb"> <h2>SAPPY</h2> </a>
-            <a href="assets/baked_goods/coffee_cake.html" class="col-md orb"> <h2>TIRED</h2> </a>
-        </div>
 
-        <div class="row second">
-            <a href="assets/baked_goods/banana_bread.html" class="col-md orb"> <h2>RAINY</h2> </a>
-            <a href="assets/baked_goods/hot_choc.html" class="col-md orb"> <h2>COZY</h2> </a>
-            <a href="assets/baked_goods/lava_cake.html" class="col-md orb"> <h2>ANGRY</h2> </a>
-            <a href="assets/baked_goods/pineapple.html" class="col-md orb"> <h2>CONFUSED</h2> </a>
-        </div>
+        <h2 class="orb col-md" onclick="getNew()">CLICK ME to choose an
+          emotion and decide for you</h2>
 
         <div class="row third">
-            <a href="assets/baked_goods/two_minute.html" class="col-md orb"> <h2>LONELY</h2> </a>
-            <a href="assets/baked_goods/creme_brulee.html" class="col-md orb"><h2>FANCY</h2> </a>
-            <a href="assets/baked_goods/apple_pie.html" class="col-md orb"> <h2>FRIENDLY</h2> </a>
-            <a href="assets/baked_goods/caramel.html" class="col-md orb"><h2>JEALOUS</h2> </a>
-        </div>
-
-        <div class="row fourth">
-          <a href="assets/baked_goods/strawberry.html" class="col-md orb"> <h2>LAZY</h2> </a>
-          <a href="assets/baked_goods/snickerdoodle.html" class="col-md orb"><h2>WELCOMING</h2> </a>
-          <a href="assets/baked_goods/eight_in_one.html" class="col-md orb"> <h2>HUNGRY</h2> </a>
-          <a href="assets/baked_goods/dirt_worms.html" class="col-md orb"><h2>SILLY</h2> </a>
+            <h1><a id="emotion" class="col-md orbo recipe2"></a></h1>
         </div>
       </div>
     </div>
@@ -61,5 +41,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+
+  var items = ["HAPPY", "SAD", "SAPPY", "TIRED", "RAINY", "COZY", "ANGRY", "CONFUSED", "LONELY", "FANCY", "FRIENDLY",
+  "JEALOUS", "LAZY", "WELCOMING", "HUNGRY", "SILLY"];
+
+  function getNew(){
+    var item = items[Math.floor(Math.random()*items.length)];
+    document.getElementById("emotion").innerHTML = item;
+    document.getElementById("emotion").href = "assets/baked_goods/" + item + ".html";
+  }
+
+
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
